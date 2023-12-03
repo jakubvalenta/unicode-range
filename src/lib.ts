@@ -1,6 +1,6 @@
 import type { Font, Glyph } from 'opentype.js';
 
-function codeToHex(code: number): string {
+export function codeToHex(code: number): string {
     return code.toString(16).toUpperCase().padStart(4, '0');
 }
 
