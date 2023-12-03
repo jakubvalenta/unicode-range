@@ -38,7 +38,7 @@ main {
 }
 h1 {
     font-size: 200%;
-    font-family: 'Palatino Linotype';
+    font-family: 'Palatino Linotype', serif;
     text-align: center;
     margin: 3em 0;
 }
