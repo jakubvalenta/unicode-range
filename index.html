@@ -10,16 +10,29 @@
             <main>
                 <div class="container">
                     <h1>Generate CSS unicode-range from a font file</h1>
-                    <div class="grid">
+                    <form class="grid">
                         <label for="path">choose a file</label>
                         <div>
-                            <input type="file" id="path" name="path" style="margin-bottom: 1em" />
-                            <p>Supported formats: TTF, OTF, WOFF.</p>
+                            <input type="file" id="path" name="path" />
+                            <p style="margin-top: 1em">Supported formats: TTF, OTF, WOFF.</p>
                             <p>The file will be processed in your browser.</p>
                         </div>
-                        <label for="unicode-range">unicode-range</label>
-                        <textarea id="unicode-range" name="unicode-range" readonly rows="20"></textarea>
-                        <h2 for="unicode-blocks">glyphs</h2>
+                        <label for="exclude"
+                            >exclude glyphs from another file<br />
+                            (optional)</label
+                        >
+                        <div>
+                            <input type="file" id="exclude" name="exlude" />
+                            <p style="margin-top: 1em">
+                                Generate only those unicode ranges that are in the first file but not in this file.
+                            </p>
+                        </div>
+                    </form>
+                    <div class="results">
+                        <h2>Results</h2>
+                        <h3>unicode-range</h3>
+                        <p id="unicode-range">&hellip;</p>
+                        <h3>glyphs</h3>
                         <div id="unicode-blocks">&hellip;</div>
                     </div>
                     <p class="error" id="error">This app requires JavaScript</p>

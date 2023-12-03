@@ -15,7 +15,7 @@ export function codesToUnicodeRange(codes: Set<number>): string {
     }
     return ranges
         .map(([start, end]) => `U+${codeToHex(start)}` + (start !== end ? `-${codeToHex(end)}` : ''))
-        .join(',');
+        .join(', ');
 }
 
 export function getCodes(font: Font): Set<number> {

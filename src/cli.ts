@@ -23,7 +23,7 @@ async function main() {
         .description('Generate the CSS property unicode-range from a TTF, OTF or WOFF font.')
         .showHelpAfterError()
         .argument('<path>', 'path to a TTF, OTF or WOFF file')
-        .option('--exclude <path>', 'exclude glyphs included in another TTF, OTF or WOFF file')
+        .option('--exclude <path>', 'exclude glyphs from another TTF, OTF or WOFF file')
         .action(async (path, options) => {
             const codes = await readCodesFromFontFile(path);
             if (options.exclude) {
