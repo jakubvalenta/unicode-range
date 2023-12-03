@@ -1,2 +1,2 @@
 #!/bin/sh
-bun src/cli.ts
+exec bun src/cli.ts "$@"
