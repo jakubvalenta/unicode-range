@@ -1,0 +1,7 @@
+{
+    "plugins": ["@trivago/prettier-plugin-sort-imports"],
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "all"
+}
