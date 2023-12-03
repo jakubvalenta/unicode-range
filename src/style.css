@@ -71,6 +71,7 @@ h3 {
 }
 label {
     font-weight: bold;
+    padding-top: 0.25em;
 }
 p {
     margin: 0;
