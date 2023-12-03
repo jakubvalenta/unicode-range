@@ -1,4 +1,4 @@
-import { codesToUnicodeRange } from './utils';
+import { codesToUnicodeRange } from './lib';
 import { expect, test } from 'bun:test';
 
 test('codesToUnicodeRange', () => {

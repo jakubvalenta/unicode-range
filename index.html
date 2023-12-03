@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Unicode Range Generator</title>
+    </head>
+    <body class="no-js">
+        <div class="page">
+            <main>
+                <div class="container">
+                    <h1>Generate CSS unicode-range from a font file</h1>
+                    <div class="grid">
+                        <label for="path">choose a file</label>
+                        <div>
+                            <input type="file" id="path" name="path" style="margin-bottom: 1em" />
+                            <p>Supported formats: TTF, OTF, WOFF.</p>
+                            <p>The file will be processed in your browser.</p>
+                        </div>
+                        <label for="unicode-range">unicode-range</label>
+                        <textarea id="unicode-range" name="unicode-range" readonly rows="20"></textarea>
+                    </div>
+                    <p class="error" id="error">This app requires JavaScript</p>
+                </div>
+            </main>
+            <footer>
+                <a href="https://www.jakubvalenta.cz/" target="_blank" rel="noreferrer">Jakub Valenta</a> 2023
+                <a href="https://github.com/jakubvalenta/unicode-range" target="_blank" rel="noreferrer">code</a>
+                made with
+                <a href="https://github.com/opentypejs/opentype.js" target="_blank" rel="noreferrer">opentype.js</a>
+            </footer>
+        </div>
+        <script type="module" src="/src/web.ts"></script>
+    </body>
+</html>
